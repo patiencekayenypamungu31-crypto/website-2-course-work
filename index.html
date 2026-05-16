@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my website</title>
+    <link rel="stylesheet"href="style.css">
+    <style>
+        body{
+            background-image: url(jum.jpg);
+        }
+        </style>
+</head>
+<body>
+    <script>
+        alert("welcome to my website");
+    </script>
+    <nav>
+        <h1>student hub</h1>
+        <ul>
+         <li><a href="index.html">🏘Home</a></li>
+            <li><a href="course.html">📝courses</a></li>
+            <li><a href="library.html">📗library</a></li>
+            <li><a href="contact.html">📞contact us</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <h2>welcome to student hub</h2>
+        <p id="demo">your center for learning and growth</p>
+        <button onclick="changetext()">Explore</button>
+        <video controls style="width: 100%;max-width: 700px;">
+            <source src="videos/myvideo.mp4"type="video/mp4">
+            your browser does not support the video tag
+        </video>
+    </div>
+    <script>
+        function changetext(){
+            document.getElementById("demo").innerHTML="javascript is working successfully!";
+        }
+    </script>
+    <div class="cards">
+        <div class="card">
+            <h3>Assignments</h3>
+            <p>Access and submit Assignments easily.</p>
+        </div>
+        <div class="card">
+            <h3>Notes</h3>
+            <p>Download lecture notes anytimes.</p>
+        </div>
+        <div class="card">
+            <h3>Results</h3>
+            <p>Check your academic progress.</p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <h2>student hub</h2>
+            <p>your academic success partner</p>
+            <div class="footer-links">
+                <li><a href="index.html">🏘Home</a></li>
+            <li><a href="course.html">📝courses</a></li>
+            <li><a href="library.html">📗library</a></li>
+            <li><a href="contact.html">📞contact us</a></li>
+            </div>
+            <p>@ 2026 student hub</p>
+        </div>
+    </footer>
+    <script src="javascript/script.js"></script>
+</body>
+</html>

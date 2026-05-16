@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial,  sans-serif;
+    background: lightgrey;
+    background-image: url("jum.jpgs");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+h1,h2,h3{
+    margin-bottom: 10px;
+}
+p{
+    line-height: 1.5;
+}
+header{
+    background: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+.navigation a{
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.navigation a:hover {
+    color: yellowgreen;
+}
+.navigation ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+@media (max-width:768px) {
+    .navigation ul{
+        flex-direction:column ;
+        align-items: center;
+    }
+}
+nav{
+    background-color: bisque;
+    padding: 15px;
+    text-align: center;
+}
+nav h1{
+    font-size: 35px;
+    margin-bottom: 15px;
+
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin: 15px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.5s;
+}
+nav ul li a:hover{
+    color: yellow;
+    letter-spacing: 2px;
+}
+.hero{
+    text-align: center;
+    padding: 100px 20px;
+    background-size: cover;
+    color: white;
+    background-position: center;
+}
+@media (max-width: 768px) {
+    .hero h2{
+        font-size: 28px;
+    }
+    .features{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.hero h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.hero p{
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+.hero button{
+    padding: 12px 25px;
+    border: none;
+    background: yellow;
+    color: navajowhite;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.hero button:hover{
+    background: orange;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.card{
+    background-color: aquamarine;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.5s;
+}
+.card:hover{
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+.card h3{
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+footer{
+    background: blueviolet;
+    padding:  20px;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+.footer-content h2{
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.footer-content p{
+    font-size: 18px;
+}
+.footer-links{
+    margin: 25px 0;
+}
+.footer-links li{
+    margin: 5px 0;
+}
+.footer-links ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.footer-links a{
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+}.footer-links a:hover{
+    color: yellow;
+}
+.Courses-page{
+    text-align: center;
+    padding: 70px 30px;
+}
+.Courses-page h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.Courses-page p{
+    font-size: 22px;
+    margin-bottom: 50px;
+}
+.courses-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    /* background-image: url(jos.jpg); */
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.course-box{
+    background: rgba(255,255,255,0.15);
+    padding: 35px;
+    width: 320px;
+    border-radius: 18px;
+    text-align: center;
+    transition: 0.5s;
+}
+.course-box:hover{
+    transform: translateY(-10px);
+}
+.course-box h3{
+    font-size: 28px;
+    margin-bottom: 20px;
+}.course-box p{
+    font-size: 18px;
+}
+.library-page{
+    text-align: center;
+    padding: 70px 30px;
+}
+.library-page h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.library-page p{
+    font-size: 22px;
+    margin-bottom: 50px;
+}
+.library-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.library-box{
+    background: #f4f4f4;;
+    width: 30%;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    transition: 0.5s;
+    text-align: center;
+}
+.course-box:hover{
+    transform: translateY(-10px);
+}
+.library-box h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+.library-box p{
+    font-size: 18px;
+}
+.Contact-page{
+    text-align: center;
+    padding:  30px;
+}
+.Contact-page h2{
+    font-size: 50px;
+    margin: 20px;
+}
+@media (max-width: 768px) {
+    .Contact-container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.Contact-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.Contact-page p{
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+.Contact-form{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background: rgba(255,255,255,0.15);
+    padding: 40px;
+    border-radius: 18px;
+}
+.Contact-form input,
+.Contact-form textarea{
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+.Contact-form textarea{
+    height: 150px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.Contact-form button{
+    padding: 10px;
+    border: none;
+    background: #333;
+    color:aqua;
+    border: none;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.Contact-form button:hover{
+    background:#555;
+}
+.Contact-info{
+    width: 30%;
+    text-align: left;
+}
+

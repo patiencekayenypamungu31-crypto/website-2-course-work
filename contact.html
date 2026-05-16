@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us-Student Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-image: url(jum.jpg);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>STUDENT HUB</h1>
+     <nav class="navigation">
+                <ul>
+            <li><a href="index.html">🏘Home</a></li>
+            <li><a href="course.html">📝courses</a></li>
+            <li><a href="library.html">📗library</a></li>
+            <li><a href="contact.html">📞contact us</a></li>
+        </ul>
+        </nav>
+        </header>
+    <section class="contact-page">
+        <h2>CONTACT US</h2>
+        <p>Research out to student Hub anytime</p>
+        <div class="contact-container">
+        <form class="contact-form"> 
+           <label>full name</label>
+           <input type="text" placeholder="enter your name">
+            <label>Email</label>
+            <input type="email" placeholder="enter your email"
+            <label>message</label>
+            <textarea placeholder="write your message"></textarea>
+            <button type="submit">send message</button>
+        </form>
+        <div class="contact-info">
+            <h3>our info</h3>
+            <p>Email:studenthub@gmail.com</p>
+            <p><phone:+25679419882</p>
+            <p>Location: Kampala,Uganda</p>
+        </div>
+        </div>
+    </section>
+      <footer>
+          <div class="footer-content">
+            <h2>STUDENT HUB</h2>    
+            <P>Your Academic success partner</P>
+            <div class="footer-links">
+                <ul>
+            <li><a href="index.html">🏘Home</a></li>
+            <li><a href="course.html">📝courses</a></li>
+            <li><a href="library.html">📗library</a></li>
+            <li><a href="contact.html">📞contact us</a></li>
+              </ul>
+            </div>
+            <p class="copy">@ 2026 STUDENT HUB/ALL RIGHTS RESERVED</p>
+        </div>
+    </footer>
+      <script>
+        document.querySelector("contactform"). addEventListener("submit",function(event) {
+            let name=document.querySelector(".contactform input[type='text']").valve.trim();
+            let email=document.querySelector(".contactform input[type='email']").valve.trim();
+            let message=document.querySelector(".contactform textarea").valve.trim();
+            if (name.length < 3){
+                alert("name must be at least 3 characters");
+                event.preventDefault();
+                return;
+            }
+            if (!email.includes(@)|| ! email.includes(".")){
+                alert("enter a valid email");
+                event.preventDefault();
+            }
+            if (message.length < 10){
+                alert("message must be atleast 10 characters ");
+                event.preventDefault();
+                return;
+            }
+            alert("form submitted successfully!")
+        })
+      </script>
+    
+</body>
+</html>
